@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/SortVisualizer.exe" internal="true" />
+  </import>
+  <widget class="Gtk.Window" id="MainWindow" design-size="500 383">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.DrawingArea" id="drawingarea">
+            <property name="MemberName" />
+            <property name="WidthRequest">500</property>
+            <property name="HeightRequest">300</property>
+            <signal name="ExposeEvent" handler="OnDrawingareaExposeEvent" />
+          </widget>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Randomize data</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButtonClicked" />
+          </widget>
+          <packing>
+            <property name="X">387</property>
+            <property name="Y">303</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HScale" id="hscale">
+            <property name="MemberName" />
+            <property name="WidthRequest">228</property>
+            <property name="CanFocus">True</property>
+            <property name="Lower">10</property>
+            <property name="Upper">250</property>
+            <property name="PageIncrement">1</property>
+            <property name="StepIncrement">1</property>
+            <property name="Value">10</property>
+            <property name="DrawValue">True</property>
+            <property name="Digits">0</property>
+            <property name="ValuePos">Top</property>
+            <signal name="ValueChanged" handler="OnHscaleValueChanged" />
+          </widget>
+          <packing>
+            <property name="X">75</property>
+            <property name="Y">300</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">Sample size</property>
+          </widget>
+          <packing>
+            <property name="X">3</property>
+            <property name="Y">318</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Sort</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton1Clicked" />
+          </widget>
+          <packing>
+            <property name="X">345</property>
+            <property name="Y">303</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.ComboBox" id="combobox1">
+            <property name="MemberName" />
+            <property name="WidthRequest">200</property>
+            <property name="IsTextCombo">True</property>
+            <property name="Items">Buble
+Insertion
+Quick</property>
+            <property name="Active">0</property>
+          </widget>
+          <packing>
+            <property name="Y">344</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">sort</property>
+          </widget>
+          <packing>
+            <property name="X">205</property>
+            <property name="Y">352</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

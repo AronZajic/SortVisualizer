@@ -1,0 +1,5 @@
+/home/aron/Projects/SortVisualizer/SortVisualizer/bin/Debug/SortVisualizer.exe
+/home/aron/Projects/SortVisualizer/SortVisualizer/bin/Debug/SortVisualizer.pdb
+/home/aron/Projects/SortVisualizer/SortVisualizer/obj/x86/Debug/SortVisualizer.csprojAssemblyReference.cache
+/home/aron/Projects/SortVisualizer/SortVisualizer/obj/x86/Debug/SortVisualizer.exe
+/home/aron/Projects/SortVisualizer/SortVisualizer/obj/x86/Debug/SortVisualizer.pdb
